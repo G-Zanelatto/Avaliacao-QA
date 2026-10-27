@@ -1,0 +1,2912 @@
+{
+  "config": {
+    "argv": [
+      "/usr/local/bin/node",
+      "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/node_modules/.bin/playwright",
+      "test",
+      "--project=chromium",
+      "--project=webkit"
+    ],
+    "configFile": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/playwright.config.ts",
+    "rootDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests",
+        "snapshotDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "https://www.saucedemo.com/",
+          "testIdAttribute": "data-test",
+          "actionTimeout": 10000,
+          "navigationTimeout": 30000,
+          "screenshot": {
+            "mode": "on",
+            "fullPage": true
+          },
+          "trace": "retain-on-failure",
+          "video": "retain-on-failure",
+          "acceptDownloads": true,
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests",
+        "snapshotDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "https://www.saucedemo.com/",
+          "testIdAttribute": "data-test",
+          "actionTimeout": 10000,
+          "navigationTimeout": 30000,
+          "screenshot": {
+            "mode": "on",
+            "fullPage": true
+          },
+          "trace": "retain-on-failure",
+          "video": "retain-on-failure",
+          "acceptDownloads": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1792,
+            "height": 1120
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./evidencias/resultados.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "saucedemo.spec.ts",
+      "file": "saucedemo.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login — BDD-01",
+          "file": "saucedemo.spec.ts",
+          "line": 54,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT-01 — Entrar com uma conta válida pelo botão Login",
+              "ok": true,
+              "tags": [
+                "01",
+                "positivo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6484,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:21.335Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-9dfaa7aa69ee399c85e0",
+              "file": "saucedemo.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "CT-02 — Entrar após corrigir uma senha inválida",
+              "ok": true,
+              "tags": [
+                "01",
+                "positivo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2101,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:28.067Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "senha-invalida",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Login-—-BDD-01-C-c6919-corrigir-uma-senha-inválida-chromium/attachments/senha-invalida-fd76300b9a49b7793c19621cd7bb523e3ff7c876.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Login-—-BDD-01-C-c6919-corrigir-uma-senha-inválida-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-2c085dce2867b982f2ff",
+              "file": "saucedemo.spec.ts",
+              "line": 67,
+              "column": 9
+            },
+            {
+              "title": "CT-01 — Entrar com uma conta válida pelo botão Login",
+              "ok": true,
+              "tags": [
+                "01",
+                "positivo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1828,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:51.326Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Login-—-BDD-01-C-f7d31-nta-válida-pelo-botão-Login-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-abc5b5366c1fa91cf88c",
+              "file": "saucedemo.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "CT-02 — Entrar após corrigir uma senha inválida",
+              "ok": true,
+              "tags": [
+                "01",
+                "positivo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1649,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:53.443Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "senha-invalida",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Login-—-BDD-01-C-c6919-corrigir-uma-senha-inválida-webkit/attachments/senha-invalida-1103eb1da13197721f68bfeb03dd98e15d1ffd3f.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Login-—-BDD-01-C-c6919-corrigir-uma-senha-inválida-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-b373fe6a7bdb116f8b12",
+              "file": "saucedemo.spec.ts",
+              "line": 67,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Carrinho — BDD-02",
+          "file": "saucedemo.spec.ts",
+          "line": 88,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT-03 — Adicionar uma mochila pelo catálogo",
+              "ok": false,
+              "tags": [
+                "02",
+                "positivo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 271,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_CONNECTION_RESET at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17",
+                        "location": {
+                          "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                          "column": 25,
+                          "line": 12
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                            "column": 25,
+                            "line": 12
+                          },
+                          "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n   at ../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:30.173Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-1121c-r-uma-mochila-pelo-catálogo-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-1121c-r-uma-mochila-pelo-catálogo-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-1121c-r-uma-mochila-pelo-catálogo-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-1121c-r-uma-mochila-pelo-catálogo-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                        "column": 25,
+                        "line": 12
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2625c6980b843532576-6f20b38ad88cf7b0316f",
+              "file": "saucedemo.spec.ts",
+              "line": 89,
+              "column": 9
+            },
+            {
+              "title": "CT-04 — Adicionar um segundo produto pela tela de detalhes",
+              "ok": false,
+              "tags": [
+                "02",
+                "positivo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 341,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17",
+                        "location": {
+                          "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                          "column": 25,
+                          "line": 12
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                            "column": 25,
+                            "line": 12
+                          },
+                          "message": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n   at ../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:30.811Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-38990-oduto-pela-tela-de-detalhes-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-38990-oduto-pela-tela-de-detalhes-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-38990-oduto-pela-tela-de-detalhes-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-38990-oduto-pela-tela-de-detalhes-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                        "column": 25,
+                        "line": 12
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2625c6980b843532576-5d7ba1b5e54594d3f008",
+              "file": "saucedemo.spec.ts",
+              "line": 110,
+              "column": 9
+            },
+            {
+              "title": "CT-03 — Adicionar uma mochila pelo catálogo",
+              "ok": true,
+              "tags": [
+                "02",
+                "positivo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1606,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:55.097Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "mochila-adicionada",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-1121c-r-uma-mochila-pelo-catálogo-webkit/attachments/mochila-adicionada-6ba172658afdd404e20e6d42a2e63b4277014706.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-1121c-r-uma-mochila-pelo-catálogo-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-b8caee0ace1448339041",
+              "file": "saucedemo.spec.ts",
+              "line": 89,
+              "column": 9
+            },
+            {
+              "title": "CT-04 — Adicionar um segundo produto pela tela de detalhes",
+              "ok": true,
+              "tags": [
+                "02",
+                "positivo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1691,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:56.711Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "luminaria-adicionada-pelos-detalhes",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-38990-oduto-pela-tela-de-detalhes-webkit/attachments/luminaria-adicionada-pelos-detalhes-629451730d7c32dd4576382295876ab60dfc51c0.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-38990-oduto-pela-tela-de-detalhes-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-dd03e7e98249c369489a",
+              "file": "saucedemo.spec.ts",
+              "line": 110,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Formulário de checkout — BDD-03",
+          "file": "saucedemo.spec.ts",
+          "line": 136,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT-05 — Abrir o checkout com um produto",
+              "ok": true,
+              "tags": [
+                "03",
+                "positivo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1463,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:31.609Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Formulário-de-ch-123ae-r-o-checkout-com-um-produto-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-d69ac132dfa82f8b4ea7",
+              "file": "saucedemo.spec.ts",
+              "line": 137,
+              "column": 9
+            },
+            {
+              "title": "CT-06 — Abrir o checkout com dois produtos e cancelar",
+              "ok": false,
+              "tags": [
+                "03",
+                "positivo",
+                "media"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 323,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17",
+                        "location": {
+                          "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                          "column": 25,
+                          "line": 12
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                            "column": 25,
+                            "line": 12
+                          },
+                          "message": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n   at ../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:33.177Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Formulário-de-ch-7e58e-om-dois-produtos-e-cancelar-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Formulário-de-ch-7e58e-om-dois-produtos-e-cancelar-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Formulário-de-ch-7e58e-om-dois-produtos-e-cancelar-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Formulário-de-ch-7e58e-om-dois-produtos-e-cancelar-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                        "column": 25,
+                        "line": 12
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2625c6980b843532576-ce26ce205ec940ac2fd9",
+              "file": "saucedemo.spec.ts",
+              "line": 156,
+              "column": 9
+            },
+            {
+              "title": "CT-05 — Abrir o checkout com um produto",
+              "ok": true,
+              "tags": [
+                "03",
+                "positivo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1533,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:58.408Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Formulário-de-ch-123ae-r-o-checkout-com-um-produto-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-d2419c05c5f0f5a20d6d",
+              "file": "saucedemo.spec.ts",
+              "line": 137,
+              "column": 9
+            },
+            {
+              "title": "CT-06 — Abrir o checkout com dois produtos e cancelar",
+              "ok": true,
+              "tags": [
+                "03",
+                "positivo",
+                "media"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1062,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:59.946Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "formulario-com-dois-itens",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Formulário-de-ch-7e58e-om-dois-produtos-e-cancelar-webkit/attachments/formulario-com-dois-itens-a16669166265f6c0ef435c0736fea8e45c6a3920.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Formulário-de-ch-7e58e-om-dois-produtos-e-cancelar-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-18cd8dbf2b494454500f",
+              "file": "saucedemo.spec.ts",
+              "line": 156,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Resumo do pedido — BDD-04",
+          "file": "saucedemo.spec.ts",
+          "line": 174,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT-07 — Avançar para o resumo com um produto e dados completos",
+              "ok": false,
+              "tags": [
+                "04",
+                "positivo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 828,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17",
+                        "location": {
+                          "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                          "column": 25,
+                          "line": 12
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                            "column": 25,
+                            "line": 12
+                          },
+                          "message": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n   at ../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:33.850Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Resumo-do-pedido-0a8ca-m-produto-e-dados-completos-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Resumo-do-pedido-0a8ca-m-produto-e-dados-completos-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Resumo-do-pedido-0a8ca-m-produto-e-dados-completos-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Resumo-do-pedido-0a8ca-m-produto-e-dados-completos-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                        "column": 25,
+                        "line": 12
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2625c6980b843532576-15dbfdb18a8aea426382",
+              "file": "saucedemo.spec.ts",
+              "line": 175,
+              "column": 9
+            },
+            {
+              "title": "CT-08 — Conferir o resumo de dois produtos e o arredondamento do imposto",
+              "ok": true,
+              "tags": [
+                "04",
+                "positivo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2092,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:35.143Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Resumo-do-pedido-2ebbe-o-arredondamento-do-imposto-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-dff7c8eb2813fe9b89f8",
+              "file": "saucedemo.spec.ts",
+              "line": 191,
+              "column": 9
+            },
+            {
+              "title": "CT-07 — Avançar para o resumo com um produto e dados completos",
+              "ok": true,
+              "tags": [
+                "04",
+                "positivo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1434,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:52:01.013Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Resumo-do-pedido-0a8ca-m-produto-e-dados-completos-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-8d1814952937f9a0541c",
+              "file": "saucedemo.spec.ts",
+              "line": 175,
+              "column": 9
+            },
+            {
+              "title": "CT-08 — Conferir o resumo de dois produtos e o arredondamento do imposto",
+              "ok": true,
+              "tags": [
+                "04",
+                "positivo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1648,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:52:02.452Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Resumo-do-pedido-2ebbe-o-arredondamento-do-imposto-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-40481b1e881c325c13b0",
+              "file": "saucedemo.spec.ts",
+              "line": 191,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Conclusão da compra — BDD-05",
+          "file": "saucedemo.spec.ts",
+          "line": 210,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT-09 — Finalizar a compra e voltar ao catálogo com o carrinho vazio",
+              "ok": false,
+              "tags": [
+                "05",
+                "positivo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 347,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17",
+                        "location": {
+                          "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                          "column": 25,
+                          "line": 12
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                            "column": 25,
+                            "line": 12
+                          },
+                          "message": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n   at ../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:37.331Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-6fbd8-tálogo-com-o-carrinho-vazio-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-6fbd8-tálogo-com-o-carrinho-vazio-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-6fbd8-tálogo-com-o-carrinho-vazio-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-6fbd8-tálogo-com-o-carrinho-vazio-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                        "column": 25,
+                        "line": 12
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2625c6980b843532576-1c9c864a83795c9749f1",
+              "file": "saucedemo.spec.ts",
+              "line": 211,
+              "column": 9
+            },
+            {
+              "title": "CT-10 — Finalizar uma compra com dois produtos e baixar o comprovante PDF",
+              "ok": false,
+              "tags": [
+                "05",
+                "positivo",
+                "media"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 354,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17",
+                        "location": {
+                          "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                          "column": 25,
+                          "line": 12
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                            "column": 25,
+                            "line": 12
+                          },
+                          "message": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n   at ../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:38.043Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-fcc1b--e-baixar-o-comprovante-PDF-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-fcc1b--e-baixar-o-comprovante-PDF-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-fcc1b--e-baixar-o-comprovante-PDF-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-fcc1b--e-baixar-o-comprovante-PDF-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                        "column": 25,
+                        "line": 12
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2625c6980b843532576-ea42df2d8aea68125a49",
+              "file": "saucedemo.spec.ts",
+              "line": 238,
+              "column": 9
+            },
+            {
+              "title": "CT-09 — Finalizar a compra e voltar ao catálogo com o carrinho vazio",
+              "ok": true,
+              "tags": [
+                "05",
+                "positivo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14914,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:52:04.105Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "compra-finalizada",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-6fbd8-tálogo-com-o-carrinho-vazio-webkit/attachments/compra-finalizada-86ebac61e4ebdf95f57b6ffda2f8a59fb241d6e8.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-6fbd8-tálogo-com-o-carrinho-vazio-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-a43217c8aeaea720cda1",
+              "file": "saucedemo.spec.ts",
+              "line": 211,
+              "column": 9
+            },
+            {
+              "title": "CT-10 — Finalizar uma compra com dois produtos e baixar o comprovante PDF",
+              "ok": true,
+              "tags": [
+                "05",
+                "positivo",
+                "media"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3138,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:52:19.024Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "comprovante-do-pedido",
+                          "contentType": "application/pdf",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-fcc1b--e-baixar-o-comprovante-PDF-webkit/attachments/comprovante-do-pedido-3e1afc0e337329a3d857da45978b59c77f082b85.pdf"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-fcc1b--e-baixar-o-comprovante-PDF-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-e30e1e592bcff4a6cd44",
+              "file": "saucedemo.spec.ts",
+              "line": 238,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Ordenação — BDD-06",
+          "file": "saucedemo.spec.ts",
+          "line": 274,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT-11 — Ordenar os seis produtos por nome de Z a A",
+              "ok": true,
+              "tags": [
+                "06",
+                "positivo",
+                "media"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1537,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:38.862Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Ordenação-—-BDD--ab8cd--produtos-por-nome-de-Z-a-A-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-4605f9a5c13bc8b055ea",
+              "file": "saucedemo.spec.ts",
+              "line": 275,
+              "column": 9
+            },
+            {
+              "title": "CT-12 — Trocar a ordenação por preço para Z a A com um item no carrinho",
+              "ok": false,
+              "tags": [
+                "06",
+                "positivo",
+                "baixa"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 324,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17",
+                        "location": {
+                          "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                          "column": 25,
+                          "line": 12
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                            "column": 25,
+                            "line": 12
+                          },
+                          "message": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n   at ../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:40.503Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Ordenação-—-BDD--151e9-a-A-com-um-item-no-carrinho-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Ordenação-—-BDD--151e9-a-A-com-um-item-no-carrinho-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Ordenação-—-BDD--151e9-a-A-com-um-item-no-carrinho-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Ordenação-—-BDD--151e9-a-A-com-um-item-no-carrinho-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                        "column": 25,
+                        "line": 12
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2625c6980b843532576-5b1f66529c590911e854",
+              "file": "saucedemo.spec.ts",
+              "line": 290,
+              "column": 9
+            },
+            {
+              "title": "CT-11 — Ordenar os seis produtos por nome de Z a A",
+              "ok": true,
+              "tags": [
+                "06",
+                "positivo",
+                "media"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1801,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:52:22.167Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Ordenação-—-BDD--ab8cd--produtos-por-nome-de-Z-a-A-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-7a11023691dd46a1b39c",
+              "file": "saucedemo.spec.ts",
+              "line": 275,
+              "column": 9
+            },
+            {
+              "title": "CT-12 — Trocar a ordenação por preço para Z a A com um item no carrinho",
+              "ok": true,
+              "tags": [
+                "06",
+                "positivo",
+                "baixa"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1707,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:52:23.973Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "ordenacao-za-com-item",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Ordenação-—-BDD--151e9-a-A-com-um-item-no-carrinho-webkit/attachments/ordenacao-za-com-item-89fae4fcd2804ec649b1930e2edd2fd3e6169365.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Ordenação-—-BDD--151e9-a-A-com-um-item-no-carrinho-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-75b288d110cc674432e3",
+              "file": "saucedemo.spec.ts",
+              "line": 290,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Usuário bloqueado — BDD-07",
+          "file": "saucedemo.spec.ts",
+          "line": 316,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT-13 — Impedir o login de uma conta bloqueada",
+              "ok": true,
+              "tags": [
+                "07",
+                "negativo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1342,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:41.183Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Usuário-bloquead-726cd-ogin-de-uma-conta-bloqueada-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-91887a9001d064e808a0",
+              "file": "saucedemo.spec.ts",
+              "line": 317,
+              "column": 9
+            },
+            {
+              "title": "CT-14 — Manter o bloqueio ao tentar abrir o catálogo pela URL",
+              "ok": false,
+              "tags": [
+                "07",
+                "negativo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 310,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_CONNECTION_RESET at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17",
+                        "location": {
+                          "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                          "column": 25,
+                          "line": 12
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                            "column": 25,
+                            "line": 12
+                          },
+                          "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n   at ../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:42.632Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Usuário-bloquead-5048d-r-abrir-o-catálogo-pela-URL-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Usuário-bloquead-5048d-r-abrir-o-catálogo-pela-URL-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Usuário-bloquead-5048d-r-abrir-o-catálogo-pela-URL-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Usuário-bloquead-5048d-r-abrir-o-catálogo-pela-URL-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                        "column": 25,
+                        "line": 12
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2625c6980b843532576-95328f9b921aa3f8470a",
+              "file": "saucedemo.spec.ts",
+              "line": 330,
+              "column": 9
+            },
+            {
+              "title": "CT-13 — Impedir o login de uma conta bloqueada",
+              "ok": true,
+              "tags": [
+                "07",
+                "negativo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2648,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:52:25.685Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Usuário-bloquead-726cd-ogin-de-uma-conta-bloqueada-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-9d7f0faea0edb24d2580",
+              "file": "saucedemo.spec.ts",
+              "line": 317,
+              "column": 9
+            },
+            {
+              "title": "CT-14 — Manter o bloqueio ao tentar abrir o catálogo pela URL",
+              "ok": true,
+              "tags": [
+                "07",
+                "negativo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1681,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:52:28.338Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "conta-bloqueada",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Usuário-bloquead-5048d-r-abrir-o-catálogo-pela-URL-webkit/attachments/conta-bloqueada-e81115bae55ce8baf1fa6f86d248ec5189b86bb8.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Usuário-bloquead-5048d-r-abrir-o-catálogo-pela-URL-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-9b50a603c23b6dd57c34",
+              "file": "saucedemo.spec.ts",
+              "line": 330,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Primeiro nome obrigatório — BDD-08",
+          "file": "saucedemo.spec.ts",
+          "line": 348,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT-15 — Tentar continuar com o primeiro nome vazio",
+              "ok": true,
+              "tags": [
+                "08",
+                "negativo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1172,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:43.301Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Primeiro-nome-ob-04964-r-com-o-primeiro-nome-vazio-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-e7bc0127e14eb9652b3a",
+              "file": "saucedemo.spec.ts",
+              "line": 349,
+              "column": 9
+            },
+            {
+              "title": "CT-16 — Enviar o formulário vazio e conferir a primeira validação",
+              "ok": false,
+              "tags": [
+                "08",
+                "negativo",
+                "media"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 328,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_CONNECTION_RESET at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17",
+                        "location": {
+                          "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                          "column": 25,
+                          "line": 12
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                            "column": 25,
+                            "line": 12
+                          },
+                          "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n   at ../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:44.579Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Primeiro-nome-ob-629c7-nferir-a-primeira-validação-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Primeiro-nome-ob-629c7-nferir-a-primeira-validação-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Primeiro-nome-ob-629c7-nferir-a-primeira-validação-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Primeiro-nome-ob-629c7-nferir-a-primeira-validação-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                        "column": 25,
+                        "line": 12
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2625c6980b843532576-2c15e73ac3a4e80966cd",
+              "file": "saucedemo.spec.ts",
+              "line": 364,
+              "column": 9
+            },
+            {
+              "title": "CT-15 — Tentar continuar com o primeiro nome vazio",
+              "ok": true,
+              "tags": [
+                "08",
+                "negativo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1216,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:52:30.023Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Primeiro-nome-ob-04964-r-com-o-primeiro-nome-vazio-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-b1a71eb45d6779073eee",
+              "file": "saucedemo.spec.ts",
+              "line": 349,
+              "column": 9
+            },
+            {
+              "title": "CT-16 — Enviar o formulário vazio e conferir a primeira validação",
+              "ok": true,
+              "tags": [
+                "08",
+                "negativo",
+                "media"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1171,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:52:31.244Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "primeiro-erro-formulario-vazio",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Primeiro-nome-ob-629c7-nferir-a-primeira-validação-webkit/attachments/primeiro-erro-formulario-vazio-ebd2a9c90feb93e68764eea79f87835f99396d12.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Primeiro-nome-ob-629c7-nferir-a-primeira-validação-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-446d2bcc12268ec288f5",
+              "file": "saucedemo.spec.ts",
+              "line": 364,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Sobrenome obrigatório — BDD-09",
+          "file": "saucedemo.spec.ts",
+          "line": 387,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT-17 — Tentar continuar com o sobrenome vazio",
+              "ok": false,
+              "tags": [
+                "09",
+                "negativo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 318,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17",
+                        "location": {
+                          "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                          "column": 25,
+                          "line": 12
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                            "column": 25,
+                            "line": 12
+                          },
+                          "message": "Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n   at ../pages/LoginPage.ts:12\n\n  10 |\n  11 |     async abrir() {\n> 12 |         await this.page.goto('/', { waitUntil: 'domcontentloaded' });\n     |                         ^\n  13 |         await expect(this.page.getByTestId('username')).toBeVisible();\n  14 |     }\n  15 |\n    at LoginPage.abrir (/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts:12:25)\n    at /Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests/saucedemo.spec.ts:21:17"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:45.264Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Sobrenome-obriga-5b94e-inuar-com-o-sobrenome-vazio-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Sobrenome-obriga-5b94e-inuar-com-o-sobrenome-vazio-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Sobrenome-obriga-5b94e-inuar-com-o-sobrenome-vazio-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Sobrenome-obriga-5b94e-inuar-com-o-sobrenome-vazio-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/pages/LoginPage.ts",
+                        "column": 25,
+                        "line": 12
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2625c6980b843532576-b79969402a562900a553",
+              "file": "saucedemo.spec.ts",
+              "line": 388,
+              "column": 9
+            },
+            {
+              "title": "CT-18 — Corrigir o sobrenome ausente e conseguir avançar",
+              "ok": true,
+              "tags": [
+                "09",
+                "negativo",
+                "media"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1655,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:46.047Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "sobrenome-ausente",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Sobrenome-obriga-238e7-ausente-e-conseguir-avançar-chromium/attachments/sobrenome-ausente-9af70ca6115a7000f4b45e567adc99e71b337310.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Sobrenome-obriga-238e7-ausente-e-conseguir-avançar-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-07f6863754cd617801d6",
+              "file": "saucedemo.spec.ts",
+              "line": 403,
+              "column": 9
+            },
+            {
+              "title": "CT-17 — Tentar continuar com o sobrenome vazio",
+              "ok": true,
+              "tags": [
+                "09",
+                "negativo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1538,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:52:32.420Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Sobrenome-obriga-5b94e-inuar-com-o-sobrenome-vazio-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-abe0b1f82e2cd0aefc86",
+              "file": "saucedemo.spec.ts",
+              "line": 388,
+              "column": 9
+            },
+            {
+              "title": "CT-18 — Corrigir o sobrenome ausente e conseguir avançar",
+              "ok": true,
+              "tags": [
+                "09",
+                "negativo",
+                "media"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2065,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:52:33.962Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "sobrenome-ausente",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Sobrenome-obriga-238e7-ausente-e-conseguir-avançar-webkit/attachments/sobrenome-ausente-2cf4cb77dbcd59f898203723b38ea382a1bdfb18.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Sobrenome-obriga-238e7-ausente-e-conseguir-avançar-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-7fb6fe848395334d1ea2",
+              "file": "saucedemo.spec.ts",
+              "line": 403,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Código postal obrigatório — BDD-10",
+          "file": "saucedemo.spec.ts",
+          "line": 427,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT-19 — Tentar continuar com o código postal vazio",
+              "ok": true,
+              "tags": [
+                "10",
+                "negativo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1674,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:47.802Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Código-postal-ob-a5b34-r-com-o-código-postal-vazio-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-4e8e05839656ed43f7e7",
+              "file": "saucedemo.spec.ts",
+              "line": 428,
+              "column": 9
+            },
+            {
+              "title": "CT-20 — Corrigir o código postal ausente e conseguir avançar",
+              "ok": true,
+              "tags": [
+                "10",
+                "negativo",
+                "media"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1478,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:51:49.480Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "codigo-postal-ausente",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Código-postal-ob-beb64-ausente-e-conseguir-avançar-chromium/attachments/codigo-postal-ausente-9bc97b96c22db782fe99e402b1aaacf1c6db8742.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Código-postal-ob-beb64-ausente-e-conseguir-avançar-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-111a4ae529c977e978b4",
+              "file": "saucedemo.spec.ts",
+              "line": 443,
+              "column": 9
+            },
+            {
+              "title": "CT-19 — Tentar continuar com o código postal vazio",
+              "ok": true,
+              "tags": [
+                "10",
+                "negativo",
+                "alta"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2413,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:52:36.031Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Código-postal-ob-a5b34-r-com-o-código-postal-vazio-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-0cbe377cc21c48d1ab7b",
+              "file": "saucedemo.spec.ts",
+              "line": 428,
+              "column": 9
+            },
+            {
+              "title": "CT-20 — Corrigir o código postal ausente e conseguir avançar",
+              "ok": true,
+              "tags": [
+                "10",
+                "negativo",
+                "media"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "ambiente",
+                      "description": "darwin 27.0.0; webkit 27.2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1056,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-26T22:52:38.449Z",
+                      "annotations": [
+                        {
+                          "type": "ambiente",
+                          "description": "darwin 27.0.0; webkit 27.2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "codigo-postal-ausente",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Código-postal-ob-beb64-ausente-e-conseguir-avançar-webkit/attachments/codigo-postal-ausente-825ea7cc37d0ff53ba46e4c8347e2b859859cdb4.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Código-postal-ob-beb64-ausente-e-conseguir-avançar-webkit/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c2625c6980b843532576-47f2c6205bac55a52815",
+              "file": "saucedemo.spec.ts",
+              "line": 443,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-26T22:51:20.800Z",
+    "duration": 78745.43400000001,
+    "expected": 30,
+    "skipped": 0,
+    "unexpected": 10,
+    "flaky": 0
+  }
+}
