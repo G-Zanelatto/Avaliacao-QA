@@ -1,0 +1,12 @@
+{
+  "descricao": "A captura CT-02-falha-de-acesso.png foi obtida na primeira execução de 26/10/2026: a navegação excedeu o limite de 30 segundos e a captura ficou em branco. O registro comprova uma falha de carregamento, sem confirmar um defeito funcional do site. A abertura foi ajustada para aguardar o conteúdo do formulário. Os erros de conexão posteriores em Chromium estão em execucao-com-chromium.json.",
+  "falhas": [
+    {
+      "caso": "CT-02 — Entrar após corrigir uma senha inválida",
+      "navegador": "chromium",
+      "status": "failed",
+      "data": "2026-10-26T22:48:39.621Z",
+      "erro": "TimeoutError: page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"load\"\u001b[22m\n"
+    }
+  ]
+}
