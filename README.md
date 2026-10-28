@@ -45,5 +45,3 @@ Nos casos negativos, a mensagem de erro é esperada: o teste passa quando ela ap
 ## Documentação
 
 Os casos, as prioridades e os resultados estão em `Casos_de_Teste_Swag_Labs_20.xlsx`. O relatório está em `Avaliacao_Pratica_GabrielZanelatto.docx` e `Avaliacao_Pratica_GabrielZanelatto.pdf`.
-
-Autor: Gabriel Zanelatto. Repositório: https://github.com/G-Zanelatto/Avaliacao-QA.
