@@ -3,9 +3,7 @@
     "argv": [
       "/usr/local/bin/node",
       "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/node_modules/.bin/playwright",
-      "test",
-      "--project=chromium",
-      "--project=webkit"
+      "test"
     ],
     "configFile": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/playwright.config.ts",
     "rootDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests",
@@ -26,44 +24,12 @@
       {
         "outputDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 60000
-      },
-      {
-        "outputDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 60000
-      },
-      {
-        "outputDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
-        "id": "webkit",
-        "name": "webkit",
         "testDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests",
         "testIgnore": [],
         "testMatch": [
@@ -78,7 +44,7 @@
         "grepInvert": null,
         "outputDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 1
         },
@@ -117,51 +83,6 @@
         "dependencies": [],
         "ignoreSnapshots": false,
         "__projectId": "chromium"
-      },
-      {
-        "grep": {},
-        "grepInvert": null,
-        "outputDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
-        "name": "webkit",
-        "testDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests",
-        "snapshotDir": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/tests",
-        "testIgnore": [],
-        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
-        "timeout": 60000,
-        "use": {
-          "baseURL": "https://www.saucedemo.com/",
-          "testIdAttribute": "data-test",
-          "actionTimeout": 10000,
-          "navigationTimeout": 30000,
-          "screenshot": {
-            "mode": "on",
-            "fullPage": true
-          },
-          "trace": "retain-on-failure",
-          "video": "retain-on-failure",
-          "acceptDownloads": true,
-          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
-          "viewport": {
-            "width": 1280,
-            "height": 720
-          },
-          "screen": {
-            "width": 1792,
-            "height": 1120
-          },
-          "deviceScaleFactor": 2,
-          "isMobile": false,
-          "hasTouch": false,
-          "defaultBrowserType": "webkit"
-        },
-        "dependencies": [],
-        "ignoreSnapshots": false,
-        "__projectId": "webkit"
       }
     ],
     "quiet": false,
@@ -223,34 +144,34 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1828,
+                      "duration": 1288,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:51:51.326Z",
+                      "startTime": "2026-10-28T11:54:15.641Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Login-—-BDD-01-C-f7d31-nta-válida-pelo-botão-Login-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Login-—-BDD-01-C-f7d31-nta-válida-pelo-botão-Login-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -258,7 +179,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-abc5b5366c1fa91cf88c",
+              "id": "c2625c6980b843532576-9dfaa7aa69ee399c85e0",
               "file": "saucedemo.spec.ts",
               "line": 55,
               "column": 9
@@ -277,39 +198,39 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1649,
+                      "duration": 762,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:51:53.443Z",
+                      "startTime": "2026-10-28T11:54:17.253Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "senha-invalida",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Login-—-BDD-01-C-c6919-corrigir-uma-senha-inválida-webkit/attachments/senha-invalida-1103eb1da13197721f68bfeb03dd98e15d1ffd3f.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Login-—-BDD-01-C-c6919-corrigir-uma-senha-inválida-chromium/attachments/senha-invalida-fd76300b9a49b7793c19621cd7bb523e3ff7c876.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Login-—-BDD-01-C-c6919-corrigir-uma-senha-inválida-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Login-—-BDD-01-C-c6919-corrigir-uma-senha-inválida-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -317,13 +238,12 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-b373fe6a7bdb116f8b12",
+              "id": "c2625c6980b843532576-2c085dce2867b982f2ff",
               "file": "saucedemo.spec.ts",
               "line": 67,
               "column": 9
             }
-          ],
-          "suites": []
+          ]
         },
         {
           "title": "Carrinho — BDD-02",
@@ -345,39 +265,39 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1606,
+                      "duration": 831,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:51:55.097Z",
+                      "startTime": "2026-10-28T11:54:18.024Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "mochila-adicionada",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-1121c-r-uma-mochila-pelo-catálogo-webkit/attachments/mochila-adicionada-6ba172658afdd404e20e6d42a2e63b4277014706.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-1121c-r-uma-mochila-pelo-catálogo-chromium/attachments/mochila-adicionada-90c8f9540d873fb0eab6c46b346d8a1f9d562bfb.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-1121c-r-uma-mochila-pelo-catálogo-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-1121c-r-uma-mochila-pelo-catálogo-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -385,7 +305,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-b8caee0ace1448339041",
+              "id": "c2625c6980b843532576-6f20b38ad88cf7b0316f",
               "file": "saucedemo.spec.ts",
               "line": 89,
               "column": 9
@@ -404,39 +324,39 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1691,
+                      "duration": 947,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:51:56.711Z",
+                      "startTime": "2026-10-28T11:54:18.866Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "luminaria-adicionada-pelos-detalhes",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-38990-oduto-pela-tela-de-detalhes-webkit/attachments/luminaria-adicionada-pelos-detalhes-629451730d7c32dd4576382295876ab60dfc51c0.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-38990-oduto-pela-tela-de-detalhes-chromium/attachments/luminaria-adicionada-pelos-detalhes-64627f7b96d080afb9574a987895a0b4a6c6dcdc.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-38990-oduto-pela-tela-de-detalhes-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Carrinho-—-BDD-0-38990-oduto-pela-tela-de-detalhes-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -444,13 +364,12 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-dd03e7e98249c369489a",
+              "id": "c2625c6980b843532576-5d7ba1b5e54594d3f008",
               "file": "saucedemo.spec.ts",
               "line": 110,
               "column": 9
             }
-          ],
-          "suites": []
+          ]
         },
         {
           "title": "Formulário de checkout — BDD-03",
@@ -472,34 +391,34 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1533,
+                      "duration": 788,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:51:58.408Z",
+                      "startTime": "2026-10-28T11:54:19.823Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Formulário-de-ch-123ae-r-o-checkout-com-um-produto-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Formulário-de-ch-123ae-r-o-checkout-com-um-produto-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -507,7 +426,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-d2419c05c5f0f5a20d6d",
+              "id": "c2625c6980b843532576-d69ac132dfa82f8b4ea7",
               "file": "saucedemo.spec.ts",
               "line": 137,
               "column": 9
@@ -526,39 +445,39 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1062,
+                      "duration": 980,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:51:59.946Z",
+                      "startTime": "2026-10-28T11:54:20.621Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "formulario-com-dois-itens",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Formulário-de-ch-7e58e-om-dois-produtos-e-cancelar-webkit/attachments/formulario-com-dois-itens-a16669166265f6c0ef435c0736fea8e45c6a3920.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Formulário-de-ch-7e58e-om-dois-produtos-e-cancelar-chromium/attachments/formulario-com-dois-itens-f5c3c3bdd7973ee75eaf560b87201eb261688feb.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Formulário-de-ch-7e58e-om-dois-produtos-e-cancelar-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Formulário-de-ch-7e58e-om-dois-produtos-e-cancelar-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -566,13 +485,12 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-18cd8dbf2b494454500f",
+              "id": "c2625c6980b843532576-ce26ce205ec940ac2fd9",
               "file": "saucedemo.spec.ts",
               "line": 156,
               "column": 9
             }
-          ],
-          "suites": []
+          ]
         },
         {
           "title": "Resumo do pedido — BDD-04",
@@ -594,34 +512,34 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1434,
+                      "duration": 906,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:52:01.013Z",
+                      "startTime": "2026-10-28T11:54:21.610Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Resumo-do-pedido-0a8ca-m-produto-e-dados-completos-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Resumo-do-pedido-0a8ca-m-produto-e-dados-completos-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -629,7 +547,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-8d1814952937f9a0541c",
+              "id": "c2625c6980b843532576-15dbfdb18a8aea426382",
               "file": "saucedemo.spec.ts",
               "line": 175,
               "column": 9
@@ -648,34 +566,34 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1648,
+                      "duration": 899,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:52:02.452Z",
+                      "startTime": "2026-10-28T11:54:22.525Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Resumo-do-pedido-2ebbe-o-arredondamento-do-imposto-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Resumo-do-pedido-2ebbe-o-arredondamento-do-imposto-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -683,13 +601,12 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-40481b1e881c325c13b0",
+              "id": "c2625c6980b843532576-dff7c8eb2813fe9b89f8",
               "file": "saucedemo.spec.ts",
               "line": 191,
               "column": 9
             }
-          ],
-          "suites": []
+          ]
         },
         {
           "title": "Conclusão da compra — BDD-05",
@@ -711,39 +628,39 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 14914,
+                      "duration": 1078,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:52:04.105Z",
+                      "startTime": "2026-10-28T11:54:23.434Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "compra-finalizada",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-6fbd8-tálogo-com-o-carrinho-vazio-webkit/attachments/compra-finalizada-86ebac61e4ebdf95f57b6ffda2f8a59fb241d6e8.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-6fbd8-tálogo-com-o-carrinho-vazio-chromium/attachments/compra-finalizada-faf87e742def0059c75161f8677022cb2bfff0d0.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-6fbd8-tálogo-com-o-carrinho-vazio-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-6fbd8-tálogo-com-o-carrinho-vazio-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -751,7 +668,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-a43217c8aeaea720cda1",
+              "id": "c2625c6980b843532576-1c9c864a83795c9749f1",
               "file": "saucedemo.spec.ts",
               "line": 211,
               "column": 9
@@ -770,39 +687,39 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3138,
+                      "duration": 1510,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:52:19.024Z",
+                      "startTime": "2026-10-28T11:54:24.522Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "comprovante-do-pedido",
                           "contentType": "application/pdf",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-fcc1b--e-baixar-o-comprovante-PDF-webkit/attachments/comprovante-do-pedido-3e1afc0e337329a3d857da45978b59c77f082b85.pdf"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-fcc1b--e-baixar-o-comprovante-PDF-chromium/attachments/comprovante-do-pedido-a1c44efd9e0957a795d2405ca7aada73c61a7126.pdf"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-fcc1b--e-baixar-o-comprovante-PDF-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Conclusão-da-com-fcc1b--e-baixar-o-comprovante-PDF-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -810,13 +727,12 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-e30e1e592bcff4a6cd44",
+              "id": "c2625c6980b843532576-ea42df2d8aea68125a49",
               "file": "saucedemo.spec.ts",
               "line": 238,
               "column": 9
             }
-          ],
-          "suites": []
+          ]
         },
         {
           "title": "Ordenação — BDD-06",
@@ -838,34 +754,34 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1801,
+                      "duration": 695,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:52:22.167Z",
+                      "startTime": "2026-10-28T11:54:26.041Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Ordenação-—-BDD--ab8cd--produtos-por-nome-de-Z-a-A-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Ordenação-—-BDD--ab8cd--produtos-por-nome-de-Z-a-A-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -873,7 +789,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-7a11023691dd46a1b39c",
+              "id": "c2625c6980b843532576-4605f9a5c13bc8b055ea",
               "file": "saucedemo.spec.ts",
               "line": 275,
               "column": 9
@@ -892,39 +808,39 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1707,
+                      "duration": 816,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:52:23.973Z",
+                      "startTime": "2026-10-28T11:54:26.746Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "ordenacao-za-com-item",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Ordenação-—-BDD--151e9-a-A-com-um-item-no-carrinho-webkit/attachments/ordenacao-za-com-item-89fae4fcd2804ec649b1930e2edd2fd3e6169365.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Ordenação-—-BDD--151e9-a-A-com-um-item-no-carrinho-chromium/attachments/ordenacao-za-com-item-27fedaaee0121bbfe5eeff2c5db1c2dda1ba614c.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Ordenação-—-BDD--151e9-a-A-com-um-item-no-carrinho-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Ordenação-—-BDD--151e9-a-A-com-um-item-no-carrinho-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -932,13 +848,12 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-75b288d110cc674432e3",
+              "id": "c2625c6980b843532576-5b1f66529c590911e854",
               "file": "saucedemo.spec.ts",
               "line": 290,
               "column": 9
             }
-          ],
-          "suites": []
+          ]
         },
         {
           "title": "Usuário bloqueado — BDD-07",
@@ -960,34 +875,34 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2648,
+                      "duration": 528,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:52:25.685Z",
+                      "startTime": "2026-10-28T11:54:27.571Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Usuário-bloquead-726cd-ogin-de-uma-conta-bloqueada-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Usuário-bloquead-726cd-ogin-de-uma-conta-bloqueada-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -995,7 +910,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-9d7f0faea0edb24d2580",
+              "id": "c2625c6980b843532576-91887a9001d064e808a0",
               "file": "saucedemo.spec.ts",
               "line": 317,
               "column": 9
@@ -1014,39 +929,39 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1681,
+                      "duration": 659,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:52:28.338Z",
+                      "startTime": "2026-10-28T11:54:28.108Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "conta-bloqueada",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Usuário-bloquead-5048d-r-abrir-o-catálogo-pela-URL-webkit/attachments/conta-bloqueada-e81115bae55ce8baf1fa6f86d248ec5189b86bb8.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Usuário-bloquead-5048d-r-abrir-o-catálogo-pela-URL-chromium/attachments/conta-bloqueada-f2de79c31390b2b520ea29b014ff086605f72190.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Usuário-bloquead-5048d-r-abrir-o-catálogo-pela-URL-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Usuário-bloquead-5048d-r-abrir-o-catálogo-pela-URL-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -1054,13 +969,12 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-9b50a603c23b6dd57c34",
+              "id": "c2625c6980b843532576-95328f9b921aa3f8470a",
               "file": "saucedemo.spec.ts",
               "line": 330,
               "column": 9
             }
-          ],
-          "suites": []
+          ]
         },
         {
           "title": "Primeiro nome obrigatório — BDD-08",
@@ -1082,34 +996,34 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1216,
+                      "duration": 834,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:52:30.023Z",
+                      "startTime": "2026-10-28T11:54:28.777Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Primeiro-nome-ob-04964-r-com-o-primeiro-nome-vazio-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Primeiro-nome-ob-04964-r-com-o-primeiro-nome-vazio-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -1117,7 +1031,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-b1a71eb45d6779073eee",
+              "id": "c2625c6980b843532576-e7bc0127e14eb9652b3a",
               "file": "saucedemo.spec.ts",
               "line": 349,
               "column": 9
@@ -1136,39 +1050,39 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1171,
+                      "duration": 908,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:52:31.244Z",
+                      "startTime": "2026-10-28T11:54:29.620Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "primeiro-erro-formulario-vazio",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Primeiro-nome-ob-629c7-nferir-a-primeira-validação-webkit/attachments/primeiro-erro-formulario-vazio-ebd2a9c90feb93e68764eea79f87835f99396d12.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Primeiro-nome-ob-629c7-nferir-a-primeira-validação-chromium/attachments/primeiro-erro-formulario-vazio-6921eb658029738bf3559591cd72a817caca7c85.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Primeiro-nome-ob-629c7-nferir-a-primeira-validação-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Primeiro-nome-ob-629c7-nferir-a-primeira-validação-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -1176,13 +1090,12 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-446d2bcc12268ec288f5",
+              "id": "c2625c6980b843532576-2c15e73ac3a4e80966cd",
               "file": "saucedemo.spec.ts",
               "line": 364,
               "column": 9
             }
-          ],
-          "suites": []
+          ]
         },
         {
           "title": "Sobrenome obrigatório — BDD-09",
@@ -1204,34 +1117,34 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1538,
+                      "duration": 807,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:52:32.420Z",
+                      "startTime": "2026-10-28T11:54:30.537Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Sobrenome-obriga-5b94e-inuar-com-o-sobrenome-vazio-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Sobrenome-obriga-5b94e-inuar-com-o-sobrenome-vazio-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -1239,7 +1152,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-abe0b1f82e2cd0aefc86",
+              "id": "c2625c6980b843532576-b79969402a562900a553",
               "file": "saucedemo.spec.ts",
               "line": 388,
               "column": 9
@@ -1258,39 +1171,39 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2065,
+                      "duration": 962,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:52:33.962Z",
+                      "startTime": "2026-10-28T11:54:31.353Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "sobrenome-ausente",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Sobrenome-obriga-238e7-ausente-e-conseguir-avançar-webkit/attachments/sobrenome-ausente-2cf4cb77dbcd59f898203723b38ea382a1bdfb18.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Sobrenome-obriga-238e7-ausente-e-conseguir-avançar-chromium/attachments/sobrenome-ausente-9af70ca6115a7000f4b45e567adc99e71b337310.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Sobrenome-obriga-238e7-ausente-e-conseguir-avançar-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Sobrenome-obriga-238e7-ausente-e-conseguir-avançar-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -1298,13 +1211,12 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-7fb6fe848395334d1ea2",
+              "id": "c2625c6980b843532576-07f6863754cd617801d6",
               "file": "saucedemo.spec.ts",
               "line": 403,
               "column": 9
             }
-          ],
-          "suites": []
+          ]
         },
         {
           "title": "Código postal obrigatório — BDD-10",
@@ -1326,34 +1238,34 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2413,
+                      "duration": 794,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:52:36.031Z",
+                      "startTime": "2026-10-28T11:54:32.324Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Código-postal-ob-a5b34-r-com-o-código-postal-vazio-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Código-postal-ob-a5b34-r-com-o-código-postal-vazio-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -1361,7 +1273,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-0cbe377cc21c48d1ab7b",
+              "id": "c2625c6980b843532576-4e8e05839656ed43f7e7",
               "file": "saucedemo.spec.ts",
               "line": 428,
               "column": 9
@@ -1380,39 +1292,39 @@
                   "annotations": [
                     {
                       "type": "ambiente",
-                      "description": "darwin 27.0.0; webkit 27.2"
+                      "description": "darwin 27.0.0; chromium 156.0.8078.4"
                     }
                   ],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1056,
+                      "duration": 991,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-26T22:52:38.449Z",
+                      "startTime": "2026-10-28T11:54:33.128Z",
                       "annotations": [
                         {
                           "type": "ambiente",
-                          "description": "darwin 27.0.0; webkit 27.2"
+                          "description": "darwin 27.0.0; chromium 156.0.8078.4"
                         }
                       ],
                       "attachments": [
                         {
                           "name": "codigo-postal-ausente",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Código-postal-ob-beb64-ausente-e-conseguir-avançar-webkit/attachments/codigo-postal-ausente-825ea7cc37d0ff53ba46e4c8347e2b859859cdb4.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Código-postal-ob-beb64-ausente-e-conseguir-avançar-chromium/attachments/codigo-postal-ausente-9bc97b96c22db782fe99e402b1aaacf1c6db8742.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Código-postal-ob-beb64-ausente-e-conseguir-avançar-webkit/test-finished-1.png"
+                          "path": "/Users/gabrielzanelatto/Backup/Playwright/Avaliacao/evidencias/ultima-execucao/saucedemo-Código-postal-ob-beb64-ausente-e-conseguir-avançar-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -1420,29 +1332,23 @@
                   "status": "expected"
                 }
               ],
-              "id": "c2625c6980b843532576-47f2c6205bac55a52815",
+              "id": "c2625c6980b843532576-111a4ae529c977e978b4",
               "file": "saucedemo.spec.ts",
               "line": 443,
               "column": 9
             }
-          ],
-          "suites": []
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-26T22:51:20.800Z",
-    "duration": 78745.43400000001,
+    "startTime": "2026-10-28T11:54:14.648Z",
+    "duration": 19551.253,
     "expected": 20,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
-  },
-  "origem": {
-    "arquivo": "execucao-com-chromium.json",
-    "filtro": "projectName = webkit",
-    "observacao": "Recorte dos resultados reais da execução de 26/10/2026. O JSON da execução posterior foi substituído durante uma listagem dos testes; as capturas de ultima-execucao foram preservadas."
   }
 }
