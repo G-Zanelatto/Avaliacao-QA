@@ -17,12 +17,12 @@ Os testes acessam https://www.saucedemo.com/ e precisam de conexão com a intern
 ## Comandos úteis
 
 ```bash
-npm test -- --headed                 # Ver o navegador durante os testes
+npx playwright test                  # Rodar os testes
+npx playwright show-report           # Consultar o relatório HTML
+npx playwright show-report           # Rodar a UI
 npm test -- --grep CT-01 --headed    # Executar apenas o CT-01
 npm run test:alta                    # Executar os casos de Alta
 npm run test:ui                      # Abrir a interface do Playwright
-npm run report                      # Consultar o relatório HTML
-npm run typecheck                   # Verificar os tipos
 ```
 
 O navegador padrão é o WebKit. Para executar no Chromium, instale com `npx playwright install chromium` e use `npm run test:chromium`.
@@ -36,7 +36,7 @@ O navegador padrão é o WebKit. Para executar no Chromium, instale com `npx pla
 
 ## Resultados
 
-Em 26/10/2026, os vinte casos passaram no WebKit, sem repetição. Na execução com Chromium, dez passaram e dez falharam ao abrir o site, com erros de conexão. Esse resultado está em `evidencias/execucao-com-chromium.json`.
+Os vinte casos passaram no WebKit, sem repetição. Na execução com Chromium, dez passaram e dez falharam ao abrir o site, com erros de conexão. Esse resultado está em `evidencias/execucao-com-chromium.json`.
 
 As capturas estão em `evidencias/ultima-execucao/`. O arquivo `evidencias/resultados.json` reúne os vinte resultados do WebKit extraídos da execução arquivada em `execucao-com-chromium.json`; a origem está descrita em `evidencias/README.md`. O CT-10 também confere os produtos e os valores do comprovante PDF. Uma nova execução substitui as evidências atuais e o relatório HTML.
 
